@@ -94,7 +94,7 @@ export function ACreateUserComponent(): JSX.Element {
 
   const handleRegistration = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const baseUrl = 'http://89.104.69.194:8000';
+    const baseUrl = 'http://79.174.86.223';
     const url = `${baseUrl}/auth/registration/`;
 
     try {
