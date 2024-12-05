@@ -12,7 +12,7 @@ export function ADeleteUserComponent({userId}:UserDeleteProps){
         const token = localStorage.getItem('access_token');
         if(token && userId){
             try{
-                const basUrl = 'http://89.104.69.194:8000'
+                const basUrl = 'http://79.174.86.223:8000'
                 const url = `${basUrl}/cloud/admin/delete_user/${userId}`
                 const response = await axios.delete(url,{
                     headers: {
