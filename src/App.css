@@ -1,0 +1,300 @@
+.header {
+    height: 10vh; /* 10% от высоты экрана */
+    background-color: rgb(63, 63, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Отступы по бокам для выравнивания элементов */
+  }
+
+  .app-logo{
+    width: 5%;
+    height: auto;
+  }
+  
+  .app-name {
+    font-size:xx-large;
+    flex-grow: 1; /* Растягиваем элемент на всю доступную ширину */
+    text-align: center; /* Выравниваем текст по центру */
+
+  }
+  
+  .profile,
+  .admin,
+  .store {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px; /* Отступ между ссылками */
+  }
+  
+  /* Стили для изображений, если они будут использоваться в качестве ссылок */
+  .profile img,
+  .admin img {
+    width: 30px; /* Ширина изображения */
+    height: 30px; /* Высота изображения */
+  }
+  
+
+  .button {
+    background-color: rgb(63, 63, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3%;
+    cursor: pointer;
+    width: 200px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+  
+  }
+
+  .form-button {
+    background-color: rgb(63, 63, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+
+.update-user-component {
+  background-color: white;
+  color: rgb(63, 63, 255);
+  border-radius: 5px;
+}
+
+.modal-form {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:20%;
+  background-color: white;
+  color: rgb(63, 63, 255);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(149, 149, 149);
+  z-index: 999;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(114, 114, 114, 0.5); /* Прозрачный цвет для затемнения фона */
+  z-index: 999; /* Выше всех других элементов */
+  display: none; /* По умолчанию скрыто */
+}
+
+.modal-open .overlay {
+  display: block; /* Показать оверлей при открытом модальном окне */
+}
+
+.form-input {
+  margin-bottom: 10%;
+  padding: 10%;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Скругление углов */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  transition: box-shadow 0.3s ease; /* Плавное изменение тени */
+}
+
+.form-input:focus {
+  outline: none; /* Убираем стандартную обводку при фокусе */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при фокусе */
+}
+  /* Стили для таблицы */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Убираем промежутки между ячейками */
+  }
+  
+  /* Стили для заголовков */
+  th {
+    background-color: rgb(63, 63, 255);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+  }
+  
+  /* Стили для строк */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Цвет фона для четных строк */
+  }
+  
+  /* Стили для ячеек */
+  td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Стили для ячеек в первом столбце */
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Стили для ссылок в последней ячейке */
+  td:last-child a {
+    color: rgb(63, 63, 255);
+    text-decoration: none;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column; /* Элементы расположены в столбик */
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 8%; 
+    margin-top: 8%; 
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .admin-header {
+    display: flex; /* Располагаем элементы в строку */
+    width: 65%; /* На всю ширину страницы */
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  
+  .admin-header > * {
+    margin-right: 10px; /* Расстояние между элементами */
+  }
+  
+  .admin-header > *:last-child {
+    margin-right: 0; /* Убираем отступ у последнего элемента */
+  }
+  
+  .file-options{
+    display: flex; /* Располагаем элементы в строку */
+    justify-content: center;
+    width: 100%; /* На всю ширину страницы */
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  .uesr-options{
+    display: flex; /* Располагаем элементы в строку */
+    justify-content: center;
+    width: 100%; /* На всю ширину страницы */
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  .chank-options{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+    
+  }
+  .button-options{
+    background-color: rgb(63, 63, 255);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 3%;
+    cursor: pointer;
+    width: 200px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+  } 
+
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  a {
+    color: inherit; /* Цвет будет унаследован от родительского элемента */
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+}
+
+.auth{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрирует элементы по горизонтали */
+  align-items: center; /* Центрирует элементы по вертикали */
+  height: auto;
+  margin-top:4%;
+  margin-bottom: 2%;
+}
+
+.input-auth {
+  width: 40%; /* Ширина элементов 60% экрана */
+  margin-bottom: 3%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Скругление углов */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  transition: box-shadow 0.3s ease; /* Плавное изменение тени */
+}
+
+.start-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.start-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.start-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.start-page ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.start-page li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.start-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.start-page a:hover {
+  text-decoration: underline;
+}
+
+.button-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+

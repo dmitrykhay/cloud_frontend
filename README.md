@@ -1,0 +1,57 @@
+# Приложение My cloud
+
+## Структура cloud_frontend:
+
+- **public - содержит статические файлы для пользовательского интерфейса приложения;**
+- **src - это основной каталог приложения, в котором хранится вся его кодовая база:**
+  - components:
+    - Admin:
+      - File:
+        - ADeleteFileUserComponent.tsx;
+        - ADownloadById.tsx;
+        - AGetLinkComponent.tsx;
+        - AUpdateFileUserComponent.tsx;
+        - AUploadFileComponent.tsx;
+        - ChangePermissions.tsx; 
+      - ACreateUserComponent.tsx;
+      - ADeleteUserComponent.tsx;
+      - UserCard.tsx;
+    - authorization:
+      - LoginComponent.tsx;
+      - RegistrationComponent.tsx;
+    - cloud:
+      - tokenAPI:
+        - updateJWT.ts;
+        - validateToken.ts;
+      - User:
+        - File:
+          - DeleteFileComponent.tsx;
+          - DownloadFileComponent.tsx;
+          - FileCard.tsx;
+          - GenerateLinkComponent.tsx;
+          - UdateFileComponent.tsx;
+          - UploadFileComponent.tsx;
+          - formatBytes.ts;
+        - LogOutCompoent.tsx;
+        - UserDeleteComponent.tsx;
+        - UserUpdateComponent.tsx;
+  - pages:
+    - AdminPage.tsx;
+    - AUserStore.tsx;
+    - AuthPage.tsx;
+    - FileStore.tsx;
+    - ProfilePage.tsx;
+    - StartPage.tsx;
+  - store:
+    - store.ts;
+  - App.css;
+  - App.tsx;
+  - index.tsx;
+  - logo.svg;
+  - react-app-env.d.ts;
+  - reportWebVitals.ts;
+- .gitignore - содержит список файлов, игнорируемых Git;
+- package-lock.json - содержит информацию о дереве зависимостей;
+- package.json - содержит список установленных пакетов и настроек конфигурации проекта, скрипты для отладки/тестирования/сборки проекта;
+- README.md - содержит описание;
+- tsconfig.json - содержит параметры конфигурации для TypeScript.
