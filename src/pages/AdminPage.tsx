@@ -24,7 +24,7 @@ export function AdminPage(){
                 navigate("/aithorization")
             }
             try{
-                const baseUrl = 'http://89.104.69.194:8000'
+                const baseUrl = 'http://79.174.86.223:8000'
                 const url = `${baseUrl}/cloud/admin/get_all_users`;
                 const response = await axios.get(url,{
                     headers:{
