@@ -14,7 +14,7 @@ export function DownloadFileComponent({ userId, fileId, name}: Props) {
   const handleGetFile = async () => {
     try {
       if(token){
-        const baseUrl = 'http://89.104.69.194:8000'
+        const baseUrl = 'http://79.174.86.223:8000'
         const url = `${baseUrl}/cloud/get_file/${userId}/${fileId}`
         const response = await axios.get(
           url,
