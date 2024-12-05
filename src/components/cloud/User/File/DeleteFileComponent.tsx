@@ -24,7 +24,7 @@ export function DeleteFileComponent({ userId, fileId }: Props) {
     }
 
     try {
-        const baseUrl = 'http://89.104.69.194:8000'
+        const baseUrl = 'http://79.174.86.223:8000'
         const url = `${baseUrl}/cloud/delete_file/${userId}/${fileId}`
         const response = await axios.delete<DeleteResponse>(
             url,
