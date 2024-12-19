@@ -80,7 +80,7 @@ export function UserUpdateComponent(){
         const newEmail = updateForm.email.length === 0 ? user.email : updateForm.email
         console.log(updateForm, updateForm, newPassword, newEmail)
         try{
-            const baseUrl = 'http://79.174.86.223:8000'
+            const baseUrl = 'http://79.174.94.152:8000'
             const url = `${baseUrl}/cloud/update_user/${user.id}`;
             const response = !newPassword ? await axios.put(url,{
                 username : newUsername,
