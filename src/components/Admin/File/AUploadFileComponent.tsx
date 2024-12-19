@@ -46,7 +46,7 @@ export function AUploadFileComponent() {
     formData.append("description", description);
     if(user && token)
     try {
-      const basUrl = 'http://79.174.86.223:8000'
+      const basUrl = 'http://79.174.94.152:8000'
       const url = `${basUrl}/cloud/admin/upload_file/${id}`
       const response = await axios.post<UploadResponse>(
         url,
