@@ -39,7 +39,7 @@ function LoginComponent(): JSX.Element {
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const baseUrl = 'http://79.174.86.223:8000';
+    const baseUrl = 'http://79.174.94.152:8000';
     const url = `${baseUrl}/auth/log_in/${state.username}/${state.password}/`;
     try {
       const response = await axios.get<LoginResponse>(url,{
