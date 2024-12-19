@@ -17,7 +17,7 @@ export function AGetLinkComponent({ userId, fileId, name }: Props) {
   const handleGetLink = async () => {
     if (token) {
       try {
-        const baseUrl = "http://79.174.86.223:8000";
+        const baseUrl = "http://79.174.94.152:8000";
         const url = `${baseUrl}/cloud/admin/get_link/${userId}/${fileId}`;
         const response = await axios.get(url, {
           headers: {
