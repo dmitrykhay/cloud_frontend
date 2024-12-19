@@ -12,7 +12,7 @@ export function ChangePermissions({userId}:ChangePremissionsProps){
     const handleChange = async () =>{
         if(token){
             try{
-                const basUrl = 'http://79.174.86.223:8000'
+                const basUrl = 'http://79.174.94.152:8000'
                 const url = `${basUrl}/cloud/admin/change_permissions/${userId}`
                 const response = await axios.get(url,{
                     headers:{
