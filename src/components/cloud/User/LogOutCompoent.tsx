@@ -14,7 +14,7 @@ export function LogOutComponent(){
     const handleLogOut = async () =>{
         if(user && token){
             try{
-                const baseUrl = 'http://79.174.86.223:8000'
+                const baseUrl = 'http://79.174.94.152:8000'
                 const url = `${baseUrl}/cloud/log_out/${user.id}` 
                 console.log(url);
                 const response = await axios.get(url,{
