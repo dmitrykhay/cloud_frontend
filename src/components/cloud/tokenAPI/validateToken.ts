@@ -11,7 +11,7 @@ export async function validateToken(){
     const refreshToken = localStorage.getItem('refresh_token');
     console.log(accessToken)
     console.log(refreshToken)
-    const baseUrl = "http://79.174.86.223:8000";
+    const baseUrl = "http://79.174.94.152:8000";
     const url = `${baseUrl}/token/`
     if(accessToken && refreshToken){
         try{
